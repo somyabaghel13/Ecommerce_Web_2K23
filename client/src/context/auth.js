@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const data = localStorage.getItem("auth");
     if (data) {
-      const parseData = JSON.parse();
+      const parseData = JSON.parse(data);
       setAuth({
         ...auth,
         user: parseData.user,
